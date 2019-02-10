@@ -10,6 +10,8 @@
 #include "stm32f3_LEDS.h"
 #include "stm32f3_Button.h"
 #include "stm32f3_GeneralTImer2.h"
+#include "stm32f3_UART.h"
+#include "cli.h"
 
 
 int main (void){
@@ -19,6 +21,8 @@ int main (void){
 	Exec_Init();	
 	Button_Init();
 	TIM2_Init();
+	UART_Init();
+	CLI_Init();
 	__enable_irq();	
 	
 	// starting the executive

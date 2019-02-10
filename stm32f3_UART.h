@@ -10,6 +10,8 @@
 
 #include "stdio.h"
 
+#define WRD_LEN_8BITS_N 0x10001000
+
 void UART_Init(void);
 void UART_Shutdown(void);
 void USART2_IRQHandler(void);

@@ -543,7 +543,7 @@ void CLI_Init(void){
 	// Go to the idle state at the start of the task so we Pend and wait for a 
 	// message to act
 	//
-	printf("\n\rPhilTracton>");
+	printf("\n\rRaviThakur>");
 
 	return;
   
@@ -597,7 +597,7 @@ void CLI_ProcessCommand(void){
 			}else{
 				printf("CLI: INDEX ERROR %d\n",i);				
 			}
-			printf("\n\rPhilTracton>");
+			printf("\n\rRaviThakur>");
 			cli_index = 0;
 			break;
 		}else{

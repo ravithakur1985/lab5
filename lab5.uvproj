@@ -221,7 +221,7 @@
             <hadIRAM2>1</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
-            <useUlib>0</useUlib>
+            <useUlib>1</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
             <RoSelD>3</RoSelD>
@@ -449,6 +449,11 @@
               <FileName>cli.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\cli.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f3_UART.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\stm32f3_UART.c</FilePath>
             </File>
           </Files>
         </Group>

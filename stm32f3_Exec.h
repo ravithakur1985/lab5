@@ -1,3 +1,4 @@
+//Executive header file
 #ifndef __stm32f3_EXEC_H__
 #define __stm32f3_EXEC_H__
 #include "stm32f30x.h"
@@ -14,9 +15,13 @@ void Exec_ClearTask(uint32_t task);
 
 extern void Button_Task(void);
 extern void TIM2_Task(void);
+extern void CLI_AddByte(void);
+extern void CLI_ProcessCommand(void);
 
-#define EXEC_TASK_BUTTON 0x00000001
-#define EXEC_TASK_TIM2   0x00000002
+#define EXEC_TASK_BUTTON      0x00000001
+#define EXEC_TASK_TIM2        0x00000002
+#define EXEC_TASK_CLI_ADDBYTE 0x00000004
+#define EXEC_TASK_CLI_PROCESS 0x00000008
 
 #endif
 
