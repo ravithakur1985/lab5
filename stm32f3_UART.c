@@ -37,7 +37,7 @@ void UART_Init(void){
 	// enable NVIC interrupt
 	NVIC_EnableIRQ(USART2_IRQn);
 	// enable UART 2
-	TIM2->CR1 |= USART_CR1_UE;
+	USART2->CR1 |= USART_CR1_UE;
 	return;
 }
 
